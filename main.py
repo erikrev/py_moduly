@@ -1,16 +1,12 @@
-# This is a sample Python script.
+# print(dir())
+# print(dir(__builtins__))
+# for m in dir(__builtins__):
+#     print(m)
+import shelve
+print(dir(shelve))
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+for obj in dir(shelve.Shelf):
+    if obj[0] != "_":
+        print(obj)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
